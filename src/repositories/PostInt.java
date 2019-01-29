@@ -10,7 +10,9 @@ public interface PostInt {
 	
 	public List<Post> getAllPosts();
 	
-	public Post newPost(String title, String descripton);
+	public Post createPost(String title, String descripton);
+	
+	public Post editPost(String title, String descripton);
 	
 	public void deletePost(int id);
 	

@@ -4,12 +4,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Blog It</title>
+		<title>Insert title here</title>
 	</head>
 	<body>
 		<div class="container">
-			<a href="logIn">Log In</a>
-			<a href="signUp">Sign Up</a>
-		</div>		
+			<jsp:include page="../components/__logIn.jsp"/>
+		</div>
 	</body>
 </html>

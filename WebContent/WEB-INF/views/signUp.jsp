@@ -7,6 +7,8 @@
 		<title>Insert title here</title>
 	</head>
 	<body>
-	
+		<div class="container">
+			<jsp:include page="../components/__signUp.jsp"/>
+		</div>
 	</body>
 </html>

@@ -16,9 +16,4 @@ public class Index {
 		return mav;
 	}
 	
-	@RequestMapping("/newUser")
-	public ModelAndView newUser(@ModelAttribute("user") User user) {
-		ModelAndView mav = new ModelAndView("newUser");
-		return mav;
-	}
 }
