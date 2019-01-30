@@ -4,16 +4,12 @@ import java.util.Date;
 
 public class Post {
 	
-	private int id;
 	private String title;
 	private String description;
 	private Date date;
 	
 	
 	
-	public int getId() {
-		return id;
-	}
 	public String getTitle() {
 		return title;
 	}
@@ -22,9 +18,6 @@ public class Post {
 	}
 	public Date getDate() {
 		return date;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	public void setTitle(String title) {
 		this.title = title;
