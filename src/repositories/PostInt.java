@@ -8,12 +8,14 @@ public interface PostInt {
 	
 	public Post getPost(int id);
 	
-	public List<Post> getAllPosts();
+	public List<Post> getAllPosts(int userId);
 	
-	public Post createPost(String title, String descripton);
+	public void createPost(int userId, String title, String description);
 	
-	public Post editPost(String title, String descripton);
+	public Post editPost(int userId, String title, String description);
 	
 	public void deletePost(int id);
+
+	List<Post> getAllPosts();
 	
 }

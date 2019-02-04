@@ -10,6 +10,9 @@ public class UserPage {
 	@RequestMapping("/userPage")
 	public ModelAndView userPage() {
 		ModelAndView mav = new ModelAndView("userPage");
+		
+		
+		
 		return mav;
 	}
 	

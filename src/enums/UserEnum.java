@@ -2,10 +2,13 @@ package enums;
 
 public enum UserEnum {
 	
-	GET_USER_BY_ID("SELECT * FROM POST WHERE ID = ?"),
-	CREATE_USER("INSERT INTO POST VALUES (?,?,?)"),
-	UPDATE_USER("SELECT * FROM POST WHERE "),
-	DELETE_USER("DELETE FROM POST Where id = ?");
+	GET_USER_BY_EMAIL("SELECT * FROM USERS WHERE EMAIL = ?"),
+	
+	GET_USERS_POSTS("SELECT * FROM POSTS JOIN USERS ON USERS.USER_ID = POSTS.USER_ID WHERE USER_ID = ?"),
+	
+	
+	CREATE_USER("INSERT INTO USERS (USER_ID, EMAIL, PASSWORD) VALUES (seq_user.nextval, ?, ?)"),
+	DELETE_USER("DELETE FROM USERS Where EMAIL = ?");
 	
 	
 	private String query;
@@ -14,7 +17,7 @@ public enum UserEnum {
 		this.query = query;
 	}
 	
-	public String getGuery() {
+	public String getQuery() {
 		return query;
 	}
 

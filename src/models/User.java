@@ -1,13 +1,22 @@
 package models;
 
-import java.util.List;
-
 public class User {
 	
+	private int id;
 	private String email;
 	private String password;
 	
-	private List<Integer> posts;
+	
+	public User(int id, String email, String password) {
+		this.id = id;
+		this.email = email;
+		this.password = password;
+	}
+	
+	public User() {
+		
+	}
+	
 	
 	
 	
@@ -17,11 +26,11 @@ public class User {
 	public String getPassword() {
 		return password;
 	}
-	public List<Integer> getPosts() {
-		return posts;
+	public int getId() {
+		return id;
 	}
-	public void setPosts(List<Integer> posts) {
-		this.posts = posts;
+	public void setId(int id) {
+		this.id = id;
 	}
 	public void setEmail(String email) {
 		this.email = email;

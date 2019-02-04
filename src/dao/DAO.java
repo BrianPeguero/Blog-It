@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public abstract class DAO {
 	private final String url = "jdbc:oracle:thin:@localhost:1521:orcl";
-	private final String username = "c##brian";
+	private final String username = "c##BLOG_IT";
 	private final String password = "ccpgO#323";
 	
 	protected Connection conn = null;
