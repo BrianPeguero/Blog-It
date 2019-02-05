@@ -24,11 +24,18 @@
 						<div class="post-description">
 							<%= listOfPosts.get(i).getDescription() %>
 						</div>
+						
 					</div>
 				<% } %>
 			<% } else { %>
 				<h1>No posts yet it seems</h1>
 			<% } %>
+			
+			<div class="floating-button">
+				<a href="newPost"></a>
+			</div>
+			
+			
 		</div>
 	</body>
 </html>
